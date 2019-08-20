@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:id="@+id/mainGroup">
+
+        <item
+            android:id="@+id/nav_leader"
+            android:icon="@drawable/ic_top_100"
+            android:title="@string/leaderboard" />
+
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_invite_earn"
+            android:title="@string/invite_earn" />
+
+        <item
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/ic_wallet"
+            android:title="@string/my_balance" />
+
+        <item
+            android:id="@+id/nav_payout_history"
+            android:icon="@drawable/ic_payout_btc"
+            android:title="@string/payout_history" />
+
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_notifications"
+            android:title="@string/notifications" />
+
+
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/subGroup">
+
+
+            <item
+                android:id="@+id/nav_support"
+                android:title="@string/support" />
+
+        <item android:title="@string/sign_out"
+            android:id="@+id/sign_out_menu"/>
+
+
+     </group>
+
+
+</menu>

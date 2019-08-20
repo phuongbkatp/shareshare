@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_logo" >
+    <target
+        android:name="fluid"
+        android:animation="@anim/logo_animator" />
+    <target
+        android:name="b1"
+        android:animation="@anim/bubble1" />
+    <target
+        android:name="b2"
+        android:animation="@anim/bubble2" />
+    <target
+        android:name="b3"
+        android:animation="@anim/bubble3" />
+    <target
+        android:name="b4"
+        android:animation="@anim/bubble4" />
+    <target
+        android:name="b5"
+        android:animation="@anim/bubble5" />
+
+
+</animated-vector>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Share4share</string>
+    <string name="my_profile">My Profile</string>
+    <string name="payout_history">Payout History</string>
+    <string name="notification_empty">Nothing to see here.</string>
+    <string name="payout_empty">Nothing great ever come that easy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="leaderboard">Top 100</string>
+    <string name="invite_earn"><![CDATA[Invite & Earn]]></string>
+    <string name="notifications">Notifications</string>
+    <string name="my_balance">My Balance</string>
+    <string name="default_value">0.00000000</string>
+    <string name="internet_msg">No Internet Connection</string>
+    <string name="support"><![CDATA[Help & Support]]></string>
+    <string name="view_in_blockchain">View In Blockchain</string>
+    <string name="wallet">Wallet</string>
+    <string name="referred">Referral</string>
+    <string name="claimed">Claimed</string>
+    <string name="agree">By clicking Sign in with Google, you agree to our terms and confirm that you have read our privacy policy and Terms</string>
+    <string name="claim_btc">Claim BTC</string>
+    <string name="balance_info">You can withdraw amount after you reach minimum Payout Limit. Minimum Payout is 0.01 BTC. Withdraw will be enabled here once you reach threshold.</string>
+    <string name="wallet_hint">Enter Bitcoin Wallet Address</string>
+    <string name="request_withdraw">Request Withdraw</string>
+    <string name="lifetime_earning">Lifetime Earning</string>
+    <string name="suspended">Suspended</string>
+    <string name="active">ACTIVE</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="e_mail">Email Us for Help or Query</string>
+    <string name="pending">Pending</string>
+    <string name="success">Success</string>
+    <string name="failed">Failed</string>
+    <string name="force_update">To continue use this application, please update it to latest version.</string>
+    <string name="openDrawer" />
+    <string name="closeDrawer" />
+    <string name="enable_disable_notifications">Enable / disable Notifications</string>
+    <string name="push_messages">Push Messages</string>
+    <string name="cache_used">Cache Used</string>
+    <string name="app_version">App Version</string>
+
+
+    // TODO  Update the credential  fields below
+
+    <string name="client_auth">1:405827648597:android:2eeaff99fb134e18</string>
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_banner_main">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_interstitial_main">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_rewarded">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="faq_url">FAQ_URL</string>
+    <string name="privacy_url">PRIVACY_URL</string>
+    <string name="invite_cap"><![CDATA[Hey I have Installed this App. Fastest Share4share on Play Store \n]]></string>
+    <string name="support_email">Support_email</string>
+    <string name="notification_channel_name">Share4share Channel</string>
+    <string name="default_notification_channel_id" translatable="false">Share4share_default_channel</string>
+
+
+</resources>

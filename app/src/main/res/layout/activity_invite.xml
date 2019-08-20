@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+            <include
+                android:id="@+id/toolbar_main"
+                layout="@layout/toolbar_layout"/>
+
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/banner_margin"
+            android:layout_marginTop="?attr/actionBarSize">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/invite_widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CardView.MyStyle"
+
+                    app:contentPadding="0dp">
+
+                    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/bd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/iTitle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                                <TextView
+                                    android:id="@+id/iBody"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/inviteBtn"
+                                        style="@style/Widget.AppCompat.Button.Small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:text="Invite" />
+
+                                    <Button
+                                        android:id="@+id/copyBtn"
+                                        style="@style/Widget.AppCompat.Button.Small"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:backgroundTint="@color/colorGreen"
+                                        android:text="Copy Link" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/invite_img"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="-1dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginTop="16dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/ic_coins" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:background="@color/colorPrimaryDark" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/rc_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/invite_widget"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:id="@+id/rct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="My Referral"
+                        android:textSize="16sp"
+                        style="@style/TextAppearance.AppCompat.Title" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/ref_refresh"
+                            style="@style/Widget.AppCompat.ImageButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@color/transparent"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_refresh" />
+
+                        <TextView
+                            android:id="@+id/refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loading..." />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:alpha="0.5"
+                        app:srcCompat="@drawable/ic_searching" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Oops!"
+                        style="@style/TextAppearance.AppCompat.Headline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/notification_empty" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|bottom"
+        app:adSize="BANNER"
+        app:adUnitId="@string/admob_banner">
+    </com.google.android.gms.ads.AdView>
+
+
+</android.support.design.widget.CoordinatorLayout>
